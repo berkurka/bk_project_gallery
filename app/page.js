@@ -26,13 +26,15 @@ export default function HomePage() {
             <li key={project.name}>
               <article className="card">
                 {project.image ? (
-                  <img
-                    className="shot"
-                    src={project.image}
-                    alt={`Screenshot of ${project.name}`}
-                    width={1280}
-                    height={800}
-                  />
+                  <div className="shot-frame">
+                    <img
+                      className="shot"
+                      src={project.image}
+                      alt={`Screenshot of ${project.name}`}
+                      width={1280}
+                      height={800}
+                    />
+                  </div>
                 ) : null}
                 <div className="card-body">
                   <h2>{project.name}</h2>
